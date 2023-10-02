@@ -1,0 +1,21 @@
+ALGORITHM dénombrement
+VAR
+    i,nb-voyels:=INTEGER:=0;
+    nb-words:=INTEGER:=1;
+    f:=STRING;
+BEGIN
+write ("type the sentence f")
+read (f)
+WHILE (f[i]<>".") DO
+    IF(f[i]=" ") THEN
+       nb-words:= nb-words+1
+    END_IF
+   IF (f[i]="a" or f[i]=e or f[i]=i or f[i]=o or f[i]=u or f[i]=y) THEN
+        nb-voyels:= nb-voyels+1
+   END_IF
+    i:=i+1
+END_WHILE
+write ("the number of voyels :",nb-voyels)
+write ("the number of words:", nb-words)
+write ("the length of the sentence:" i)
+END
